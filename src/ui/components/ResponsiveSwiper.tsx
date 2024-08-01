@@ -10,19 +10,19 @@ type SwiperProps = {
   slidesToShow?: number;
 };
 
-const Swiper = ({ children, orientation, slidesToShow }: SwiperProps) => {
+const ResponsiveSwiper = ({
+  children,
+  orientation,
+  slidesToShow,
+}: SwiperProps) => {
   const settings = {
-    className: `center ${orientation === "vertical" ? "vertical-slider" : ""}`,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: slidesToShow || 3,
-    swipeToSlide: true,
-    speed: 1000,
-    afterChange: function (index: any) {
-      console.log(
-        `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-      );
-    },
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 8,
+    slidesToScroll: 4,
+    initialSlide: 0,
+ 
   };
 
   return (
@@ -32,4 +32,4 @@ const Swiper = ({ children, orientation, slidesToShow }: SwiperProps) => {
   );
 };
 
-export default Swiper;
+export default ResponsiveSwiper;

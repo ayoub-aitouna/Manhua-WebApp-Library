@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +19,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
 }
 
 @layer utilities {
@@ -31,3 +30,134 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+
+.slider-container .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-slide>div {
+  display: flex;
+  max-width: 33dvw;
+  justify-content: center;
+}
+
+:root {
+  --card-height: 300px;
+  --card-width: 100px;
+}
+
+ .card {
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 20px;
+  perspective: 2500px;
+  background-color: aqua;
+  margin: 0 10px
+}
+
+/*
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+
+.wrapper {
+  transition: all .5s;
+  position: absolute;
+  width: 100%;
+  z-index: -2
+}
+
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, .75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, .75)
+}
+
+.wrapper:after,
+.wrapper:before {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all .5s;
+  position: absolute;
+  left: 0
+}
+
+.wrapper:before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(0deg, transparent 46%, rgba(12, 13, 19, .5) 68%, #0c0d13 97%)
+}
+
+.wrapper:after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(12, 13, 19, .9) 68%, #0c0d13 97%)
+}
+
+.card:hover .wrapper:before,
+.wrapper:after {
+  opacity: 1
+}
+
+.card:hover .wrapper:after {
+  height: 120px
+}
+
+.title {
+  width: 100%;
+  transition: transform .5s
+}
+
+.card:hover .title {
+  transform: translate3d(0, -50px, 100px)
+}
+
+.card .details {
+  transition: all .3s;
+  opacity: 0
+}
+
+.card:hover .details {
+  opacity: 1
+}
+
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all .5s;
+  position: absolute;
+  z-index: -2
+}
+
+.card .characterWrapper {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  transition: all .2s;
+  background-image: linear-gradient(180deg, transparent 50%, rgba(12, 13, 19, .5) 68%, #0c0d13 97%)
+}
+
+.card:hover .characterWrapper {
+  opacity: 1;
+  background-image: linear-gradient(180deg, transparent 46%, rgba(12, 13, 19, .5) 68%, #0c0d13 97%)
+}
+
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0, -20%, 100px)
+} */

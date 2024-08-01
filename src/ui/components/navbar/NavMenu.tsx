@@ -27,7 +27,7 @@ const NavMenu = () => {
   const pathname = usePathname();
   console.log("pathname", pathname);
   return (
-    <menu className="flex flex-row gap-4">
+    <ul className="flex flex-row gap-4">
       {MenuList.map((link) => (
         <li
           className={clsx("hover:text-gray-400", {
@@ -40,7 +40,7 @@ const NavMenu = () => {
           </Link>
         </li>
       ))}
-    </menu>
+    </ul>
   );
 };
 
