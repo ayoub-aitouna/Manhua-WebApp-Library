@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import "@/ui/components/MangaSwiper/swiper.module.css";
+import "@/app/ui/components/MangaSwiper/swiper.module.css";
 interface MangaCardProps {
 	title: string;
 	href: string;

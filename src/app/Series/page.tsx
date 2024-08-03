@@ -1,4 +1,4 @@
-import ManhuaCard from "@/ui/components/ManhuaCard";
+import ManhuaCard from "@/app/ui/components/ManhuaCard";
 import React from "react";
 
 const page = () => {

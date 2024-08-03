@@ -1,6 +1,2 @@
-
-yarn install
-
-yarn run dev --experimental-https
-yarn run build
-
+npm install
+npm run dev

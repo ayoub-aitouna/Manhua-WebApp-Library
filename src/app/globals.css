@@ -6,8 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-    --card-height: 300px;
-    --card-width: calc(var(--card-height) / 1.5)
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,13 +33,36 @@ body {
 }
 
 
-/* .slider-container .slick-slide {
+.slider-container .slick-slide {
   display: flex;
   justify-content: center;
 }
 
 .slick-slide>div {
   display: flex;
-  max-width: 20dvw;
+  max-width: 24dvw;
   justify-content: center;
-} */
+}
+
+
+.modal-ease-in {
+  transform: scale(0.5);
+  opacity: 0;
+  animation: animate-ease-in 0.2s forwards ease-in-out;
+}
+
+@keyframes animate-ease-in {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
