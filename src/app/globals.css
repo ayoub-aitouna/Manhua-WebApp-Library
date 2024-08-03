@@ -6,7 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 1.5)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,13 +33,13 @@ body {
 }
 
 
-.slider-container .slick-slide {
+/* .slider-container .slick-slide {
   display: flex;
   justify-content: center;
 }
 
 .slick-slide>div {
   display: flex;
-  max-width: 33dvw;
+  max-width: 20dvw;
   justify-content: center;
-}
+} */

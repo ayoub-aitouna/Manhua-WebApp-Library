@@ -3,7 +3,7 @@ import Image from "next/image";
 const LargePost = () => {
   return (
     <div
-      className="relative h-80 w-full min-w-40 max-w-[600px] rounded-xl overflow-hidden shadow-lg"
+      className="relative h-80 w-full min-w-40 max-w-[450px] rounded-xl overflow-hidden shadow-lg"
       title="Juvenile Law"
     >
       <Image
